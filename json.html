@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJavaScript Object Notation</title>
+</head>
+<script>
+    obj ={name:'harry',length:1, a:{this:'that'}}
+    jso= JSON.stringify(obj); // converts object to string 
+    console.log(typeof jso);
+    console.log(jso)
+
+    parsed=JSON.parse('{"name":"harry","length":1,"a":{"this":"that"}}') //converts from string to object
+    console.log(parsed)
+    console.log(typeof parsed);
+
+</script>
+<body>
+    <h3>JSON</h3>
+</body>
+</html>
